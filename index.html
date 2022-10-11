@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="dropdown">
+                    <div class="dropdown__select">
+                        <span class="js-dropdown-text">English</span>
+                        <img src="icons/arrow.svg" alt="arrow" class="dropdown-image">
+                    </div>
+                    <ul class="lang-switcher">
+                        <li id="ua">Українська</li>
+                        <li id="en">English</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <div class="password-generator">
+                <h3 class="password-generator-title" data-key="generatorTitle">Generate Your Password</h3>
+                <div class="password-generator-text" data-key="generatorText">Your password is:</div>
+                <div class="password"></div>
+                <button class="password-generator-btn">
+                    <span data-key="generatorBtn">GENERATE</span> 
+                    <img src="icons/pawprint-cat-svgrepo-com.svg" alt="pawprint">
+                </button>
+                <span class="password-generator__descr" data-key="generatorDescr">Click the button to generate password</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
